@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap");
+body {
+  background-color: #131722;
+  color: #fff;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+a, a:hover {
+  color: #fff !important;
+}
+
+.brdr {
+  border: rgba(168, 168, 168, 0.2392156863) solid 1px;
+}
+
+.clr {
+  color: #949cb0;
+}
+
+.card {
+  background-color: #1A1F27;
+  color: #F5F5F5;
+  border: teal solid 1px;
+  box-shadow: 0px 4px 6px teal;
+  height: 100%;
+}
+
+.card img {
+  max-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.rate {
+  background-color: teal;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: teal !important;
+}
+
+p, .register {
+  color: #949cb0 !important;
+}
+
+button {
+  background-color: teal !important;
+  color: #fff !important;
+}
+
+.socialMediaIcons:hover {
+  cursor: pointer;
+}
+
+.app-container {
+  background-color: #0c1015;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.offline {
+  margin-top: 100px;
+}/*# sourceMappingURL=index.css.map */

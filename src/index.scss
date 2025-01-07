@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+
+$bgColor:#131722;
+$lightBgColor:rgba(30, 41, 82, 0.1);
+$bgTransparent:rgba(19, 91, 117, 0.6) ;
+$fontColor:#fff;
+$borderColor:#a8a8a83d;
+$borderHeight:1px;
+$secondFontColor:#949cb0;
+$cardBg:#1A1F27;
+$cardBorder: teal;
+
+body{
+    background-color: $bgColor;   
+    color: $fontColor;
+    font-family:'Montserrat Alternates' , sans-serif;
+}
+
+a , a:hover{
+    color: $fontColor !important;
+}
+
+.brdr{
+    border: $borderColor solid $borderHeight;
+    }
+    
+.clr{
+        color: $secondFontColor;
+    }
+
+.card{
+    background-color: $cardBg;
+    color: #F5F5F5;
+    border: $cardBorder solid 1px;
+    box-shadow: 0px 4px 6px $cardBorder; 
+    height: 100%; 
+
+
+}
+
+.card img {
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+
+.rate{
+    background-color: $cardBorder;
+}
+  
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color : $cardBorder !important;
+}
+p , .register{
+    color:$secondFontColor !important;
+}
+button{
+    background-color: $cardBorder !important;
+    color: #fff !important;
+}
+.socialMediaIcons:hover{
+  cursor: pointer;
+}
+
+.app-container{
+background-color: #0c1015 ;
+display: flex;
+flex-direction: column;
+min-height: 100%;  
+}
+
+.offline{
+    margin-top: 100px;
+}

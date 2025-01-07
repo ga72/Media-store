@@ -1,0 +1,9 @@
+@import '../../index.scss';
+
+.brdr{
+border: $borderColor solid $borderHeight;
+}
+
+.clr{
+    color: $secondFontColor;
+}
