@@ -80,13 +80,13 @@ p, .register {
 }
 
 @media (max-width: 768px) {
-  button {
+  .button1 {
     color: transparent !important;
   }
 }
 
 @media (max-width: 768px) {
-  button:hover {
+  .button1:hover {
     color: transparent !important;
     background-color: #d2caca !important;
   }

@@ -26,7 +26,7 @@ export default function Details() {
           {params.mediaType === "person" ? (
             <img
               src={`https://image.tmdb.org/t/p/w500/${itemDetails.profile_path}`}
-              className="w-75"
+              className="w-75"           
               alt={itemDetails.name}
             />
           ) : (
