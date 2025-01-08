@@ -65,11 +65,21 @@ export default function LogIn({saveUserData}) {
   return (
     <div className='my-3 p-5 w-75 m-auto'>
        <h1 className='my-5'>Login Form</h1>
-       {
-        errorsList.map((error , index)=>{
-         return( <div key={index} className='alert alert-danger'>{error.message}</div>)
-        })
-       }
+       {errorsList.map((error, index) => {
+        if (error.context.label === 'password') {
+          return (
+            <div key={index} className='alert alert-danger'>
+              Invalid password please try again
+            </div>
+          );
+        } else {
+          return (
+            <div key={index} className='alert alert-danger'>
+              {error.message}
+            </div>
+          );
+        }
+      })}
        {errorMessage?<div className='alert alert-danger'>{errorMessage}</div>:""}
        <form onSubmit={formSubmitData}>
          

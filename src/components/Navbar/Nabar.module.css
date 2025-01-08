@@ -48,7 +48,7 @@ p, .register {
   color: #949cb0 !important;
 }
 
-button {
+.btn {
   background-color: teal !important;
   color: #fff !important;
 }
@@ -69,6 +69,25 @@ button {
 }
 
 .navBg {
-  background-color: rgba(30, 41, 82, 0.1);
+  background-color: rgb(18, 22, 40);
   color: #fff;
 }
+@media (max-width: 768px) {
+  .navBg {
+    background-color: rgb(18, 22, 40);
+    color: #fff;
+  }
+}
+
+@media (max-width: 768px) {
+  button {
+    color: transparent !important;
+  }
+}
+
+@media (max-width: 768px) {
+  button:hover {
+    color: transparent !important;
+    background-color: #d2caca !important;
+  }
+}/*# sourceMappingURL=Nabar.module.css.map */

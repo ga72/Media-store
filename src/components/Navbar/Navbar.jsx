@@ -38,9 +38,9 @@ export default function Navbar({userData , logout }) {
               </div>
               {
                 userData ? <li className="nav-item">
-                  <div className='d-flex align-items-center justify-content-center ms-2'>
-                    <span>Hello {userData.name}</span>
-                    <Link className={`nav-link active ${style.navLink}`} aria-current="page" to="logIn" onClick={logout} >Log out</Link>
+                  <div className='d-flex align-items-center  ms-2'>
+                    <Link>Hello {userData.name}</Link>
+                    <Link className={`nav-link active ${style.navLink} ms-2`} aria-current="page" to="logIn" onClick={logout} >Log out</Link>
 
                   </div>
                 </li> :

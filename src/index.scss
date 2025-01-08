@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
 
 $bgColor:#131722;
-$lightBgColor:rgba(30, 41, 82, 0.1);
+$lightBgColor:rgb(18, 22, 40);
 $bgTransparent:rgba(19, 91, 117, 0.6) ;
 $fontColor:#fff;
 $borderColor:#a8a8a83d;
@@ -58,7 +58,7 @@ a:hover{
 p , .register{
     color:$secondFontColor !important;
 }
-button{
+.btn{
     background-color: $cardBorder !important;
     color: #fff !important;
 }

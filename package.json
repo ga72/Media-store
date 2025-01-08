@@ -1,5 +1,5 @@
 {
-  "homepage": "https://ga72.github.io/Media store",
+  "homepage": "./",
   "name": "app3",
   "version": "0.1.0",
   "private": true,
@@ -25,9 +25,9 @@
   },
   "scripts": {
     "start": "react-scripts --max_old_space_size=4096 start",
-    "prdeploy":"npm run build",
-    "deploy":"gh-pages -d build",
-    "build": "react-scripts build",
+    "prdeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "rimraf build && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -50,6 +50,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "rimraf": "^6.0.1"
   }
 }

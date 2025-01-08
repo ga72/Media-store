@@ -21,7 +21,7 @@ export default function Details() {
 
   return (
     <>
-      <div className="row py-5 my-5 m-auto">
+      <div className="row py-5 my-5 m-auto ">
         <div className="col-md-5 ">
           {params.mediaType === "person" ? (
             <img

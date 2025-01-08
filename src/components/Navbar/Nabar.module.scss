@@ -3,5 +3,30 @@
 .navBg{
     background-color: $lightBgColor;
     color: $fontColor;
+     
+    @media (max-width: 768px) {
+        background-color: rgb(18, 22, 40); // Background color for small screens
+        color: #fff; // Ensure text color is white
+      }
 }
 
+button{
+    @media(max-width: 768px){
+        color:transparent !important;
+        // background-color: #c6c4c4 !important;
+
+    }
+}
+
+button:hover{
+    @media(max-width: 768px){
+        color:transparent !important;
+        background-color: #d2caca !important;
+
+    }
+}
+
+
+
+
+ 
