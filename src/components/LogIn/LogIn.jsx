@@ -9,6 +9,8 @@ export default function LogIn({saveUserData}) {
     const Joi = require('joi');
     const [errorMessage, setErrorMessage] = useState('');
     const [errorsList , setErrorsList] = useState([])
+      const [isLoading, setIsLoading] = useState(false);
+  
   const [user , setUser] = useState({
       'email':'',
       'password':'',
@@ -31,14 +33,13 @@ export default function LogIn({saveUserData}) {
 
   const formSubmitData = async (e) => {
     e.preventDefault();
-
+    setIsLoading(true);
     let validateData = validateDataForm();
     console.log(validateData);
     
     if(validateData.error){
       setErrorsList(validateData.error.details)
-      console.log(validateData.error.details);
-      
+      setIsLoading(false); 
     }
     else{
 
@@ -56,6 +57,9 @@ export default function LogIn({saveUserData}) {
       } catch (error) {
         setErrorMessage(error.response?.data?.message || 'An error occurred during login');
         console.error(error.response?.data || error.message);
+      }
+      finally {
+        setIsLoading(false);
       }
     }
     
@@ -92,7 +96,9 @@ export default function LogIn({saveUserData}) {
            <input onChange={getInputData} type="password" name="password" id="password" className='form-control my-2' />
          </div>
          <p className='my-3'>Don't have an account ? <Link to='/register' className='register'>Register</Link></p>
-         <button className='btn btn-info float-end '>Log in</button>
+         <button className='btn btn-info float-end my-3'>
+          {isLoading ? <i className='fa fa-spinner fa-spin' aria-hidden='true'></i> : 'Login'}
+        </button>
          <div className='clear-fix'></div>
 
        </form>
