@@ -63,7 +63,7 @@ export default function LogIn({saveUserData}) {
  
  
   return (
-    <div className='my-3 p-5 w-50 m-auto'>
+    <div className='my-3 p-5 w-75 m-auto'>
        <h1 className='my-5'>Login Form</h1>
        {
         errorsList.map((error , index)=>{

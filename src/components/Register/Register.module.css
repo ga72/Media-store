@@ -1,0 +1,8 @@
+.inputField {
+  width: 50%; /* Default width for larger screens */
+}
+@media (max-width: 768px) {
+  .inputField {
+    width: 400px; /* Width for small screens */
+  }
+}/*# sourceMappingURL=Register.module.css.map */
