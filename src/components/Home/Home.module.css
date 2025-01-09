@@ -82,11 +82,4 @@ p, .register {
 
 .clr {
   color: #949cb0;
-}
-
-@media (max-width: 768px) {
-  .card {
-    width: 50%;
-    margin: auto;
-  }
 }/*# sourceMappingURL=Home.module.css.map */

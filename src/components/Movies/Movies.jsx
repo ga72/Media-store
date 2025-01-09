@@ -1,5 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
-import axios from 'axios';
+import React, { useContext} from 'react'
 import style from '../Home/Home.module.scss'
 import { Link } from 'react-router-dom';
 import { MediaContext } from '../Context/MediaStore';
