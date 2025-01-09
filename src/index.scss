@@ -77,3 +77,11 @@ min-height: 100%;
 .offline{
     margin-top: 100px;
 }
+
+img{
+   @media  (max-width: 768px){
+    margin: auto;
+    display: flex;
+    justify-content: center;
+   }
+}

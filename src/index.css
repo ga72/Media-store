@@ -66,4 +66,12 @@ p, .register {
 
 .offline {
   margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+  img {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=index.css.map */

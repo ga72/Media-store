@@ -68,6 +68,14 @@ p, .register {
   margin-top: 100px;
 }
 
+@media (max-width: 768px) {
+  img {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .navBg {
   background-color: rgb(18, 22, 40);
   color: #fff;
