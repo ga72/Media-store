@@ -76,6 +76,13 @@ p, .register {
   }
 }
 
+@media (max-width: 768px) {
+  .card {
+    width: 60%;
+    margin: auto;
+  }
+}
+
 .navBg {
   background-color: rgb(18, 22, 40);
   color: #fff;
@@ -89,12 +96,6 @@ p, .register {
 
 @media (max-width: 768px) {
   .button1 {
-    color: transparent !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .button1:hover {
     color: transparent !important;
     background-color: #d2caca !important;
   }
